@@ -73,12 +73,11 @@
                 <version>2.22.2</version>
                 <configuration>
                     <parallel>methods</parallel>
-                    <threadCount>3</threadCount>
+                    <useUnlimitedThreads>true</useUnlimitedThreads>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <skipTests>false</skipTests>
-                        <includes>
-                          <include>**/runners/*CukesRuner.java</include>
-                        </includes>
+                    <includes>
+                        <include>**/*CukesRunner.java</include>
+                    </includes>
                 </configuration>
             </plugin>
             <plugin>
@@ -105,5 +104,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
