@@ -73,7 +73,8 @@
                 <version>2.22.2</version>
                 <configuration>
                     <parallel>methods</parallel>
-                    <useUnlimitedThreads>true</useUnlimitedThreads>
+<!--                    <useUnlimitedThreads>true</useUnlimitedThreads>-->
+                    <threadCount>3</threadCount>
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
                         <include>**/*CukesRunner.java</include>
